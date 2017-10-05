@@ -11880,23 +11880,23 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Minimum price of the data</span>
-<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Maximum price of the data</span>
-<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Mean price of the data</span>
-<span class="n">mean_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Median price of the data</span>
-<span class="n">median_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Standard deviation of prices of the data</span>
-<span class="n">std_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># Show the calculated statistics</span>
 <span class="k">print</span> <span class="s2">&quot;Statistics for Boston housing dataset:</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -11925,7 +11925,7 @@ Minimum price: $105,000.00
 Maximum price: $1,024,800.00
 Mean price: $454,342.94
 Median price $438,900.00
-Standard deviation of prices: $165,340.28
+Standard deviation of prices: $165,171.13
 </pre>
 </div>
 </div>
@@ -11961,8 +11961,11 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<h1 id="1-RM:-Yes,-I-think-that-the-number-of-rooms-can-indicate-a-higher-price-of-the-whole-property-since-it-stands-for-more-space.-Interesting-to-know-might-be,-the-location-of-the-property-and-its-age-to-adjust-the-price-since.-Where-prices-for-old-and-very-new/modern-homes-will-increase,-middle-aged-realestates-might-loose-value.">1 RM: Yes, I think that the number of rooms can indicate a higher price of the whole property since it stands for more space. Interesting to know might be, the location of the property and its age to adjust the price since. Where prices for old and very new/modern homes will increase, middle aged realestates might loose value.<a class="anchor-link" href="#1-RM:-Yes,-I-think-that-the-number-of-rooms-can-indicate-a-higher-price-of-the-whole-property-since-it-stands-for-more-space.-Interesting-to-know-might-be,-the-location-of-the-property-and-its-age-to-adjust-the-price-since.-Where-prices-for-old-and-very-new/modern-homes-will-increase,-middle-aged-realestates-might-loose-value.">&#182;</a></h1><h1 id="2-LSTAT:-No,-I-think-that-this-might-indicate-a-cheaper-price-since-it-usally-reflects-the-quality-of-living-in-this-reagion-as-well-as-more-affordable-space.">2 LSTAT: No, I think that this might indicate a cheaper price since it usally reflects the quality of living in this reagion as well as more affordable space.<a class="anchor-link" href="#2-LSTAT:-No,-I-think-that-this-might-indicate-a-cheaper-price-since-it-usally-reflects-the-quality-of-living-in-this-reagion-as-well-as-more-affordable-space.">&#182;</a></h1><h1 id="3-PTRATIO:-No,-I-think-this-is-the-exact-opposite.-Since-less-students-per-teacher-indicate-a-better-learning-atmosphere-for-the-students-the-parents-would-value-such-schools-and-the-proximity-to-these.">3 PTRATIO: No, I think this is the exact opposite. Since less students per teacher indicate a better learning atmosphere for the students the parents would value such schools and the proximity to these.<a class="anchor-link" href="#3-PTRATIO:-No,-I-think-this-is-the-exact-opposite.-Since-less-students-per-teacher-indicate-a-better-learning-atmosphere-for-the-students-the-parents-would-value-such-schools-and-the-proximity-to-these.">&#182;</a></h1>
+<p><strong>Answer: </strong>
+RM: Yes, I think that the number of rooms can indicate a higher price of the whole property since it stands for more space. Interesting to know might be, the location of the property and its age to adjust the price since. Where prices for old and very new/modern homes will increase, middle aged realestates might loose value. 
+LSTAT: No, I think that this might indicate a cheaper price since it usally reflects the quality of living in this reagion as well as more affordable space. 
+PTRATIO: No, I think this is the exact opposite. Since less students per teacher indicate a better learning atmosphere for the students the parents would value such schools and the proximity to these.</p>
+
 </div>
 </div>
 </div>
@@ -12059,12 +12062,17 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Calculate the performance of this model</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">performance_metric</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">])</span>
 <span class="k">print</span> <span class="s2">&quot;Model has a coefficient of determination, R^2, of {:.3f}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="n">sample_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="mf">0.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.42</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.21</span><span class="p">,</span> <span class="mf">0.78</span><span class="p">,</span> <span class="mf">0.53</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">sample_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;True Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Prediction&#39;</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="s1">&#39;True Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Prediction&#39;</span><span class="p">,</span> <span class="n">sample_df</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12082,6 +12090,287 @@ Standard deviation of prices: $165,340.28
 <pre>Model has a coefficient of determination, R^2, of 0.923.
 </pre>
 </div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[72]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1122b0790&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
 </div>
 
 </div>
@@ -12113,8 +12402,10 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>
-Actually I don't think we got very good predicitons here since we are looking at a range from [-0.5,7]. Even though the size of the deviation is in most cases (execpt the last one) only decimal, this is quit high compared to the data range.</p>
+<p><strong>Answer:</strong></p>
+<p><strong>Old Answer:</strong> Actually I don't think we got very good predicitons here since we are looking at a range from [-0.5,7]. Even though the size of the deviation is in most cases (execpt the last one) only decimal, this is quit high compared to the data range.</p>
+<p><strong>Feedback:</strong> I would probably say that we have a pretty decent model here. In general, the higher the R-squared, the better the model fits your data. So with a high value of 92.3% (0.923) we can clearly see that we have strong correlation between the true values and predictions.</p>
+<p><strong>Extended answer:</strong> What I meant to say here is that even though we get a high score in the first place (92,3%), I think we could also have scaled the data somehow since the deviation is still quit big when looking at the range of the data. I understand that our predictions are very good though.</p>
 
 </div>
 </div>
@@ -12140,14 +12431,14 @@ Actually I don't think we got very good predicitons here since we are looking at
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;train_test_split&#39;</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span> 
 
 <span class="c1"># TODO: Shuffle and split the data into training and testing subsets</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 
 <span class="c1"># Success</span>
 <span class="k">print</span> <span class="s2">&quot;Training and testing split was successful.&quot;</span>
@@ -12173,6 +12464,16 @@ Actually I don't think we got very good predicitons here since we are looking at
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Addition:</strong> added random_state to the train_test_split function for consistency</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -13279,10 +13580,12 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>
-max_depth = 3 
+<p><strong>Answer: </strong></p>
+<p><strong>Old answer:</strong> max_depth = 3 
 I picked this graph since it shows the best performance of all four models. 
 Here, both curves are convergating towards 0.8 or something close to that, which is a good result. Adding more training points might not show any effect right now since the training curves is convergating with more data points towards a 0.8 value. We could also use less training data and either use it as testing or for cross validation.</p>
+<p><strong>Feedback: </strong> Therefore lastly for this section make sure you also describe the initial trends on the training and testing curves, before they converge(increasing or decreasing?). As this is key in terms of how models initially scale to more data.</p>
+<p><strong>Extended answer:</strong> In addition we see the normal increase of the testing curve, as the model improves with more data and a decreasing training crve since the model does not fit the training a 100% anymore. This just means that the model got more complex and is nothing bad. Also we don't want to overfit the model and keep it general. Thus a training scrore of almost 100% is not wanted. This means, that the model improved when adding more training data which is to be expected. As soon as the extned the increse of the testing curve slows we know, that we mgight have found a good number of training points.</p>
 
 </div>
 </div>
@@ -13759,7 +14062,14 @@ aFjSM8YYEzT+H3Bt1T+HkjE0AAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<h1 id="1-When-a-model-is-trained-with-a-max-depth-of-1-the-model-suffers-from-high-bias-since-the-model-can't-predict-the-values-good.-This-means-that-the-model-itself-is-not-depicting-the-whole-complexity-of-the-problem-and-therefore-underfits.">1 When a model is trained with a max depth of 1 the model suffers from high bias since the model can't predict the values good. This means that the model itself is not depicting the whole complexity of the problem and therefore underfits.<a class="anchor-link" href="#1-When-a-model-is-trained-with-a-max-depth-of-1-the-model-suffers-from-high-bias-since-the-model-can't-predict-the-values-good.-This-means-that-the-model-itself-is-not-depicting-the-whole-complexity-of-the-problem-and-therefore-underfits.">&#182;</a></h1><h1 id="2-When-a-model-is-trained-with-a-depth-of-10-we-can-see-the-training-curve-convergating-to-1-(copying-the-data)-and-the-testing-corve-decreasing.-This-is-common-for-overfitted-models.">2 When a model is trained with a depth of 10 we can see the training curve convergating to 1 (copying the data) and the testing corve decreasing. This is common for overfitted models.<a class="anchor-link" href="#2-When-a-model-is-trained-with-a-depth-of-10-we-can-see-the-training-curve-convergating-to-1-(copying-the-data)-and-the-testing-corve-decreasing.-This-is-common-for-overfitted-models.">&#182;</a></h1>
+<p><strong>Old Answer:</strong>
+When a model is trained with a max depth of 1 the model suffers from high bias since the model can't predict the values good. This means that the model itself is not depicting the whole complexity of the problem and therefore underfits. 
+When a model is trained with a depth of 10 we can see the training curve convergating to 1 (copying the data) and the testing corve decreasing. This is common for overfitted models.</p>
+<p><strong>Feedback:</strong> Just make sure you also mention what a max_depth of 10 suffers from in terms of bias / variance. What does "overfitting" refer to?</p>
+<p><strong>Extended answer:</strong>
+Addition 1: usually both, the testing and the validation scrore are bad with a error due to high bias since the model simpley does not fit the complexity very well. 
+Addition 2: with a greater number of max_depth the variane will  increase when the bias decreases. Since the validation score is way worse than the testing score (great difference) we can say that we have a high variance here since the model cannot adapt to bew (the testing) data.</p>
+
 </div>
 </div>
 </div>
@@ -13782,8 +14092,9 @@ aFjSM8YYEzT+H3Bt1T+HkjE0AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<h1 id="1-depth-of-four.-We-still-see-a-little-increase-of-accuracy-from-depth=3-to-depth=4-but-the-curve-will-drop-from-then-on.">1 depth of four. We still see a little increase of accuracy from depth=3 to depth=4 but the curve will drop from then on.<a class="anchor-link" href="#1-depth-of-four.-We-still-see-a-little-increase-of-accuracy-from-depth=3-to-depth=4-but-the-curve-will-drop-from-then-on.">&#182;</a></h1>
+<p><strong>Answer: </strong>
+depth of four. We still see a little increase of accuracy from depth=3 to depth=4 but the curve will drop from then on.</p>
+
 </div>
 </div>
 </div>
@@ -13846,8 +14157,14 @@ Example from the class: SVM with Kernels and Gammas</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<h1 id="1-What-is-cross-validation:-CV-is-basically-getting-a-third-subset-of-data-to-have-training-data,-cross-validation-data-and-testing-data.-We-don't-want-to-use-our-testing-data-to-evaluate-our-model-since-this-would-introduce-a-certain-bias.-Therefore-we-have-the-cross-validation-data-which-we-use-to-simulate-tests-and-make-decisions-concerning-our-model-on.">1 What is cross validation: CV is basically getting a third subset of data to have training data, cross validation data and testing data. We don't want to use our testing data to evaluate our model since this would introduce a certain bias. Therefore we have the cross validation data which we use to simulate tests and make decisions concerning our model on.<a class="anchor-link" href="#1-What-is-cross-validation:-CV-is-basically-getting-a-third-subset-of-data-to-have-training-data,-cross-validation-data-and-testing-data.-We-don't-want-to-use-our-testing-data-to-evaluate-our-model-since-this-would-introduce-a-certain-bias.-Therefore-we-have-the-cross-validation-data-which-we-use-to-simulate-tests-and-make-decisions-concerning-our-model-on.">&#182;</a></h1><h1 id="2-What-k-fold-is:-When-we-split-our-data-into-training-and-testing-data-we-throw-away-useful-data-for-training.-To-utelize-this-data-we-can-use-the-kf-approach.-We-split-our-data-into-k-buckets,-e.g.-k=6-buckets.-Then-we-start-training-our-model-k=6-times-using-k-1=5-buckets-and-1-bucket-to-test-the-model.-We-iterate-over-the-buckets-so-every-bucket-was-used-as-testing-bucket-once.-Finally-we-average-our-results-to-get-our-final-model.">2 What k-fold is: When we split our data into training and testing data we throw away useful data for training. To utelize this data we can use the kf approach. We split our data into k buckets, e.g. k=6 buckets. Then we start training our model k=6 times using k-1=5 buckets and 1 bucket to test the model. We iterate over the buckets so every bucket was used as testing bucket once. Finally we average our results to get our final model.<a class="anchor-link" href="#2-What-k-fold-is:-When-we-split-our-data-into-training-and-testing-data-we-throw-away-useful-data-for-training.-To-utelize-this-data-we-can-use-the-kf-approach.-We-split-our-data-into-k-buckets,-e.g.-k=6-buckets.-Then-we-start-training-our-model-k=6-times-using-k-1=5-buckets-and-1-bucket-to-test-the-model.-We-iterate-over-the-buckets-so-every-bucket-was-used-as-testing-bucket-once.-Finally-we-average-our-results-to-get-our-final-model.">&#182;</a></h1><h1 id="3-How-it-helps:-Kf-helps-us-to-spare-our-testing-data-when-making-adjustments-to-our-model-like-with-Grid-Search-we-have-to-pick-the-right-combination-of-parameters-first.">3 How it helps: Kf helps us to spare our testing data when making adjustments to our model like with Grid Search we have to pick the right combination of parameters first.<a class="anchor-link" href="#3-How-it-helps:-Kf-helps-us-to-spare-our-testing-data-when-making-adjustments-to-our-model-like-with-Grid-Search-we-have-to-pick-the-right-combination-of-parameters-first.">&#182;</a></h1>
+<p><strong>Answer: </strong>
+<strong>Old answer:</strong> 
+What is cross validation: CV is basically getting a third subset of data to have training data, cross validation data and testing data. We don't want to use our testing data to evaluate our model since this would introduce a certain bias. Therefore we have the cross validation data which we use to simulate tests and make decisions concerning our model on. 
+What k-fold is: When we split our data into training and testing data we throw away useful data for training. To utelize this data we can use the kf approach. We split our data into k buckets, e.g. k=6 buckets. Then we start training our model k=6 times using k-1=5 buckets and 1 bucket to test the model. We iterate over the buckets so every bucket was used as testing bucket once. Finally we average our results to get our final model.
+How it helps: Kf helps us to spare our testing data when making adjustments to our model like with Grid Search we have to pick the right combination of parameters first.</p>
+<p><strong>Feedback:</strong> Great description of the k-fold cross-validation technique, probably the most used CV method in practice. However can you expand a bit more in terms of the benefits when used with grid search when optimizing a model. Why is it beneficial to utilize more splits of the data for training and testing purposes?</p>
+<p><strong>Extended answer:</strong> Additionally it is important to mention that if we tune our paramets on one data set we migth just tend to overfitt the model because we tune the parameters in a way they fit the beneath data best. But we want that our parameters are still general and fit the whole basis best. Therefore it is important to check which combination fits the whole data best by checking it against several data sets. It is important to never touch the real testing data here. Lastly it would help us to detect an error because of high variance since we are testing the model several times. In case we overfittedd our model our predicitions would differ a lot between different models.</p>
+
 </div>
 </div>
 </div>
@@ -14062,7 +14379,7 @@ No, it does not differ.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a matrix for client data</span>
@@ -14073,6 +14390,8 @@ No, it does not differ.</p>
 <span class="c1"># Show predictions</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">client_data</span><span class="p">)):</span>
     <span class="k">print</span> <span class="s2">&quot;Predicted selling price for Client {}&#39;s home: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span>
+    
+<span class="k">print</span> <span class="n">features</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -14090,6 +14409,15 @@ No, it does not differ.</p>
 <pre>Predicted selling price for Client 1&#39;s home: $404,526.32
 Predicted selling price for Client 2&#39;s home: $227,246.81
 Predicted selling price for Client 3&#39;s home: $937,825.00
+               RM       LSTAT     PTRATIO
+count  489.000000  489.000000  489.000000
+mean     6.240288   12.939632   18.516564
+std      0.643650    7.081990    2.111268
+min      3.561000    1.980000   12.600000
+25%      5.880000    7.370000   17.400000
+50%      6.185000   11.690000   19.100000
+75%      6.575000   17.120000   20.200000
+max      8.398000   37.970000   22.000000
 </pre>
 </div>
 </div>
@@ -14104,7 +14432,11 @@ Predicted selling price for Client 3&#39;s home: $937,825.00
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-Since client 3 has the expected best house and client 2 the least one the model seems to predict reasonable prices. The second property is close the minimum price of 105K. The first one is arround the mean of 454K and the third is almost at the very end of the price range.</p>
+<strong>Old answer:</strong> Since client 3 has the expected best house and client 2 the least one the model seems to predict reasonable prices. The second property is close the minimum price of 105K. The first one is around the mean of 454K and the third is almost at the very end of the price range.</p>
+<p><strong>Feedback:</strong> Good reasoning based on the descriptive stats of the housing prices, but can you also give some justification for why they are reasonable given the features for the clients? As a good idea would be to go client by client and give an idea for each feature of RM, LSTAT, and PTRATIO.</p>
+<p><strong>Extended answer:</strong> With the first client having a property with 5 rooms with moderate poverty level of 17% and also moderate PT-ratio of 15-to-1 this house will most likely sell around the predicted price. My indication is based on the price being short below the mean as well as the number of rooms. The LSTAT value is a bit higher and the PT-ratio is a bit lower than the average. 
+For the second client having rooms short above the global minimum poverty level far in Q3 with a value close to the absolute maximum as well as the maximum PT-ratio it is reasonable that the value for this property is pretty low and could also be a little lower.
+The third property is ranked at the top concerning the number of rooms in the its neighbourhood and is with both the poverty level as well as the PT-ratio around the global minimum. With these stats, it is understandable that the property is also close to the maximum price in the region.</p>
 
 </div>
 </div>
