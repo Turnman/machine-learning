@@ -13195,8 +13195,8 @@ Without having a lot of insights into the possibilities I would argue that the d
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><br>
-I chose to use the three features lights, oncoming and waypoint. The lights can have two states, the oncoming and waypoint feature have three states (left, right and forward). Therefore, we have a state space of 2 * 3 * 3 which is 18. So, our cab has 18 different states it could be in.<br>
-Yes, I think we can learn a policy for 18 states in a reasonable number of training trials.</p>
+I chose to use the three features lights, oncoming and waypoint. The lights can have two states, the oncoming and waypoint feature have three states (left, right and forward). Therefore, we have a state space of 2 * 4 * 3 which is 24. So, our cab has 24 different states it could be in.<br>
+Yes, I think we can learn a policy for 24 states in a reasonable number of training trials.</p>
 
 </div>
 </div>
@@ -17393,7 +17393,7 @@ After all I am happy that the smart cab has improved that fast but would like to
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <br>
 state = (waypoint, lights, oncoming) <br> 
-As mentioned in the above cell my smart cab has not found the optimal policy following the two examples I gave for controversy. The best instructions that we could achieve are those, were we have negative values for all forbidden actions and a positive value for the one which it has to take. E.g. we would have to follow the waypoints strictly depending on the lights. Taking #1 of the above examples, were the next waypoint is left, the lights are green and the oncoming traffic is turning left - so both are turning in front of each other - the best option would either be to wait until the agent can "see" the car behind the oncoming one or turning left right away. <br>
+As mentioned in the above cell my smart cab has not found the optimal policy following the two examples I gave for controversy. The best instructions that we could achieve are those, were we have negative values for all forbidden actions and a positive value for the one which it has to take. E.g. we would have to follow the waypoints strictly depending on the lights. Taking #1 of the above examples, were the next waypoint is left, the lights are green and the oncoming traffic is turning left - so both are turning in front of each other - the best option would either be to wait until the agent can "see" the car behind the oncoming one or turning left right away. The best instructions we could give our driving agent would be the traffic rules itself as well as a map. However, the optimal policy could be reduced to a function which maximizes the Q matrix. Also, the optimal policy does not depend on a singel state. Since it is based on a function, we could assume the states to be independent of one another. <br>
 However, in most of the cases the agent learned close to optimal policy. Here the agent is rating the wrong actions negative and only the really right action is positive, as in the examples below. Therefore, the correct action is the only one that can be chosen. <br></p>
 <ol>
 <li><p>('forward', 'red', 'forward')
@@ -17459,8 +17459,8 @@ However, in most of the cases the agent learned close to optimal policy. Here th
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><br></p>
 <ul>
-<li>the first missing attribute is the narrowmindedness of the agent. It does not know how far he has still got to the drop-off. Also, we do not have a reward function for dropping the client at in time. The only measurement we do have in terms of distance is the attribute deadline which is the distance times 5. </li>
-<li>second, the driver cannot imagine what he might get in the future. Nik-11 provided a good example in the discussion forum when comparing going to a party or staying in to learn.</li>
+<li>the first missing attribute is the narrowmindedness of the agent. It does not know how far he has still got to the drop-off or can see what to choose at the next intersection. Also, we do not have a reward function for dropping the client at in time. The only measurement we do have in terms of distance is the attribute deadline which is the distance times 5. To actually be able to use future rewards we would also need a backpropagation function which tells the client, what he did right or wrong at a single position, like NNs use back propagation to update their neurons. </li>
+<li>second, the driver cannot imagine what he might get in the future. This is because the environment is also randomly changing and is generated randomly. Therefore, an environmental cause that was valid in one epoch might not be the following.</li>
 </ul>
 
 </div>
